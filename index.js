@@ -1,12 +1,20 @@
+//Variables declared
 const express = require('express');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true});
+//MongoDB Connection
+mongoose.connect('mongodb://localhost:27017/eShop', {useNewUrlParser: true})
+    .then(() => {
+        console.log("MONGO WE STILL LOVE YOU CONN OPEN")
+    })
+    .catch(err => {
+        console.log("HOUSTON COMMS BROKE")
+        console.log(err)
+    })
 
-
-
+//App setup/Page Routing
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
