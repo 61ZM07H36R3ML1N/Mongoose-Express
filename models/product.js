@@ -16,3 +16,7 @@ const productSchema = mongoose.Schema({
         enum: ['fruit', 'vegetable', 'dairy', 'snacks']
     },
 })
+
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product;
