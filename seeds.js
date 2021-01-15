@@ -45,4 +45,12 @@ const seedProducts = [
         category: 'snack'
     }
 
-]        
+]   
+
+Product.insertMany(seedProducts)
+    .then(res => {
+        console.log(res)
+    })
+    .catch(e => {
+        console.log(e)
+    })
