@@ -26,6 +26,7 @@ app.get('/products', async (req, res) => {
     res.send('ALL PRODUCTS HERE FAM!')
 })
 
+//server setup
 app.listen(3000, () => {
     console.log("APP IS LISTENING! ON PORT 3000")
 })
