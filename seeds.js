@@ -42,7 +42,7 @@ const seedProducts = [
     {
         name: 'Spicy Tortilla Chips',
         price: 2.50,
-        category: 'snack'
+        category: 'snacks'
     }
 
 ]   
