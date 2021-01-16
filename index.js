@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 app.get('/products', async (req, res) => {
     const products = await Product.find({})
     console.log(products)
-    res.send('products/index')
+    res.render('products/index')
 })
 
 //server setup
