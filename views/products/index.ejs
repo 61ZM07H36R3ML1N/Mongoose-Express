@@ -8,6 +8,11 @@
 
 <body>
     <H1>All Products</H1>
+    <ul>
+        <% for(let product of products) { %>
+            <li><%= product.name %> </li>
+        <% }%>
+    </ul>
 </body>
 
 </html>
