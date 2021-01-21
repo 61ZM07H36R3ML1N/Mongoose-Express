@@ -42,6 +42,10 @@ app.get('/products/:id', async (req, res) => {
     res.render('products/show', { product })
 }) 
 
+app.get('/products/:id/edit', async (req, res) => {
+    res.render('products/edit')
+})
+
 //server setup
 app.listen(3000, () => {
     console.log("APP IS LISTENING! ON PORT 3000")
