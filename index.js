@@ -43,7 +43,8 @@ app.get('/products/:id', async (req, res) => {
 }) 
 
 app.get('/products/:id/edit', async (req, res) => {
-    res.render('products/edit')
+    const product = await Product.findById(id);
+    res.render('products/edit', { product })
 })
 
 //server setup
