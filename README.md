@@ -6,7 +6,7 @@ App Demo:
 * This is a mock store front using Mongoose and Express with some routing from EJS for full CRUD functionality
 
 * Enviroment: Node.js
-* Database: (will update when done)
+* Database: MongoDB
 * Languages: Mongoose, EJS, Express, HTML, CSS
 
 ## Features
