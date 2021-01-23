@@ -9,8 +9,18 @@
 <body>
     <h1>Edit Product</h1>
     <form action="/products/<%=product._id%>" method="POST">
-    <label for="name">Product Name</label>
-    <input type="text" name="name" id="name" placeholder="product name" value="<%=product.name%>">
+        <label for="name">Product Name</label>
+        <input type="text" name="name" id="name" placeholder="product name" value="<%=product.name%>">
+        <label for="price">Price (Unit)</label>
+        <input type="number" id="price" name="price" placeholder="product name">
+        <label for="category">Select Category</label>
+        <select name="category" id="category">
+            <option value="fruit">fruit</option>
+            <option value="vegetable">vegetable</option>
+            <option value="dairy">dairy</option>
+            <option value="snacks">snacks</option>
+        </select>
+        <button>Submit Order</button>
     </form>
 </body>
 
