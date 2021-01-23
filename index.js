@@ -54,7 +54,11 @@ app.get('/products/:id/edit', async (req, res) => {
     res.render('products/edit', { product })
 })
 
-
+app.put('/products/:id', async (req, res) => {
+    const { id } = req.params;
+    const product = await Product.findByIdAndUpdate(id, req.body, { runValidators: true, new: true });
+    res.redirect('/products/${product._id}')
+})
 
 //server setup
 app.listen(3000, () => {
